@@ -6,9 +6,9 @@ interface ButtonCounterProps {
 }
 
 const ButtonCounter = ({
-  label,
+  label = "Click me",
   onClick,
-  size,
+  size = "sm",
   backgroundColor = "black",
 }: ButtonCounterProps) => {
   const sizeClasses = {
