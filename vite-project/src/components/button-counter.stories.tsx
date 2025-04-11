@@ -3,6 +3,7 @@ import ButtonCounter from "./button-counter";
 export default {
   title: "Counter/ButtonCounter",
   component: ButtonCounter,
+  tags: ["autodocs"],
   argTypes: {
     backgroundColor: {
       control: {
