@@ -5,16 +5,16 @@ export default {
   component: ButtonCounter,
 };
 
-// Story where the button size is large
-
-export const Large = {
+// Story where the button size is small
+export const Small = {
   args: {
-    size: "lg",
+    size: "sm",
     label: "Click me",
     onClick: () => {},
   },
 };
 
+// Story where the button size is medium
 export const Medium = {
   args: {
     size: "md",
@@ -23,9 +23,10 @@ export const Medium = {
   },
 };
 
-export const Small = {
+// Story where the button size is large
+export const Large = {
   args: {
-    size: "sm",
+    size: "lg",
     label: "Click me",
     onClick: () => {},
   },
