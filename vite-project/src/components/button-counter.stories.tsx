@@ -3,6 +3,13 @@ import ButtonCounter from "./button-counter";
 export default {
   title: "Counter/ButtonCounter",
   component: ButtonCounter,
+  argTypes: {
+    backgroundColor: {
+      control: {
+        type: "color",
+      },
+    },
+  },
 };
 
 // Story where the button size is small

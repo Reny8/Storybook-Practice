@@ -1,20 +1,27 @@
 interface ButtonCounterProps {
   label: string;
   onClick: () => void;
-  size?: "sm" | "md" | "lg";
+  size: "sm" | "md" | "lg";
+  backgroundColor?: string;
 }
 
-const ButtonCounter = ({ label, onClick, size = "sm" }: ButtonCounterProps) => {
+const ButtonCounter = ({
+  label,
+  onClick,
+  size,
+  backgroundColor = "black",
+}: ButtonCounterProps) => {
   const sizeClasses = {
     sm: "px-3 py-1 text-sm",
     md: "px-6 py-2 text-base",
     lg: "px-8 py-3 text-lg",
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div>
       <button
         onClick={onClick}
-        className={`${sizeClasses[size]} bg-blue-500 rounded-md text-white`}
+        className={`${sizeClasses[size]} rounded-md text-white`}
+        style={{ backgroundColor }}
       >
         {label}
       </button>
