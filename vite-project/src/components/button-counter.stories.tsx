@@ -6,9 +6,26 @@ export default {
   tags: ["autodocs"],
   argTypes: {
     backgroundColor: {
-      control: {
-        type: "color",
+      control: "color",
+      description: "The background color of the button",
+      table: {
+        defaultValue: { summary: "black" },
       },
+    },
+    size: {
+      description: "The size of the button",
+      table: {
+        defaultValue: { summary: "sm" },
+      },
+    },
+    label: {
+      description: "The label of the button",
+      table: {
+        defaultValue: { summary: "Click me" },
+      },
+    },
+    onClick: {
+      description: "The function to be called when the button is clicked",
     },
   },
 };
