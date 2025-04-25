@@ -6,7 +6,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar title="My App" links={links} backgroundColor="#2e3841" />
+        <NavBar
+          title="Storybook Practice"
+          links={links}
+          backgroundColor="#2e3841"
+        />
         <Routes>
           <Route path="/" element={<CounterPage />} />
         </Routes>
