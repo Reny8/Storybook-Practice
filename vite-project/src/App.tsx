@@ -1,9 +1,16 @@
-import "./App.css";
-
+import { BrowserRouter, Route, Routes } from "react-router";
+import NavBar from "./components/nav-bar/nav-bar";
+import CounterPage from "./pages/counter-page";
 function App() {
+  const links = [{ name: "Counter", href: "/" }];
   return (
     <>
-      <div>Hello World</div>
+      <BrowserRouter>
+        <NavBar title="My App" links={links} backgroundColor="#2e3841" />
+        <Routes>
+          <Route path="/" element={<CounterPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
