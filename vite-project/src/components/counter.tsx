@@ -8,9 +8,8 @@ const Counter = () => {
     setCount(count + 1);
   };
   return (
-    <div>
-      {count}
-      <br />
+    <div className="flex flex-row items-center justify-between gap-4 mt-4">
+      <div className="text-2xl font-bold flex-1 text-center">{count}</div>
       <ButtonCounter
         label="Increment"
         onClick={increment}

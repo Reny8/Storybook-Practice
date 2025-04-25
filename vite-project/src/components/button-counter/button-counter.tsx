@@ -20,7 +20,7 @@ const ButtonCounter = ({
     <div>
       <button
         onClick={onClick}
-        className={`${sizeClasses[size]} rounded-md text-white`}
+        className={`${sizeClasses[size]} rounded-md text-white hover:cursor-pointer hover:shadow-xl transition duration-300 ease-in-out active:scale-95 active:shadow-none`}
         style={{ backgroundColor }}
       >
         {label}
